@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-color: black;
+        }
+        .nav{
+            color: white;
+            margin-top: 20px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 30px;
+            text-align: center;
+            /* border: 1px solid red; */
+        }
+        
+        #image{
+            display: none;
+            position: relative;
+            top: -0px;
+            left: 780px;
+            height: 400px;
+            width: 650px;
+        }
+        .main{
+            margin-top: 40px;
+            margin-left: 30px; 
+        }
+        #btnID{
+            position: relative; 
+            display: inline;
+            font-size: 40px;
+            padding: 5px; border: none; background-color: #7ee8fa;
+            background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+            border-radius: 3px
+        }
+        
+        #btnID:hover{
+            transition: margin-right 1s;
+            transition: margin-right 1s ;
+            transition: margin-right 1s ease-in-out;
+            transition: margin-right 1s ease-in-out .5s;
+            transition: margin-right 1s, color 1s;
+            transition: all 1s ease-out;
+            transform: rotate(90deg);
+            box-shadow: #80ff72;
+            margin-left: 20px;
+        }
+        #bio{
+            display: none;
+        }
+        .heading2{
+            font-size: 50px;
+            margin-top: 20px;
+            font-family: 'Ubuntu', sans-serif;
+            text-align: center;
+        }
+        .para2{
+            font-size: 30px;
+            margin: 40px;
+            font-family: 'Beau Rivage', cursive;
+        }
+    </style>
+
+</head>    
+
+<body>
+        <header class="nav">
+            <nav>
+                <h1>Kim Mi - soo <br><br> 1992 - 2022</h1>
+            </nav>
+            <br>
+        </header>
+        <hr>
+        <main class="main">
+            <p style="position: relative; 
+            display: inline;
+            font-size: 40px;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 5px;" class="para">Sometimes All I Think About Is  <button type="button"onclick="show()" id="btnID">
+                :(        
+            </button>
+            </p>
+            <img id="image" src="IMGs/JeongMin.jpg"alt="Jeong Min"/>
+            <br><br><br><br>
+        </main>
+        <hr>
+        <div id="bio">
+            <h1 class="heading2">Careers</h1>
+            <p class="para2">Kim began her debut in 2018 in Lipstick Revolution. During the early stages of her career, Kim was known for her debut role from Lipstick Revolution and a supporting character from Kyungmi's World.[3] She also appeared in the 2020 drama Hi Bye, Mama! as the female protagonist's sister.[4][5][6][7][8][9][10]
+
+                Kim recently gained attention for her portrayal of a cold but kind and righteous student activist Yeo Jeong-min in JTBC's Snowdrop (2021-22).[11] Despite the show's ongoing controversies relating to alleged historical distortion, Kim's appearance in Snowdrop was her most notable on-screen performance to date; however, it became her second-last on-screen role as Kim died on 5 January 2022.[12] Prior to Kim's death, seven out of 16 episodes had been broadcast, and the filming had concluded since Snowdrop was a pre-produced series.[1]
+                
+                Kim was cast in an undisclosed role in Disney+'s original drama Kiss Six Sense, which was set to air in the first half of 2022, and it has started filming. Kiss Six Sense canceled the scheduled filming for the day due to the sudden death of Kim Mi-soo.[13][14] The filming resumed the following day after they paused filming, but there was no confirmation on whether Kim's character would be recast, or Kim's scenes were completed; Kim's character was revealed as a unnamed woman who discovers her ability to look into 
+                another person's future.[15]</p>
+
+            <h1>Note: This Article Is From WikiPedia</h1>    
+        </div>
+
+</body>
+
+<script>
+    function show() {
+
+        /* Access image by id and change
+        the display property to block*/
+        document.getElementById('image').style.display = "block";
+        document.getElementById('bio').style.display = "block";
+        document.getElementById('btnID').style.display = "none";
+    }
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<p class="para">Sometimes All I Think About Is  <button style="position: relative; 
+    display: inline;
+    font-size: 40px;
+    padding: 5px;" type="button"onclick="show()" id="btnID">
+    :(        
+</button>
+</p>
+<img id="image" src="IMGs/JeongMin.jpg"alt="Jeong Min"/> -->
+
+
+
+
+
+
+
+
+<!-- 
+<script>
+    function show() {
+
+        /* Access image by id and change
+        the display property to block*/
+        document.getElementById('image').style.display = "block";
+
+        document.getElementById('btnID').style.display = "none";
+    }
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet"> -->
