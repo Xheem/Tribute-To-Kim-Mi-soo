@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tribute</title>
+    <title>Tribute</title>    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
@@ -19,6 +19,7 @@
             margin: 0;
             padding: 0;
             color: white;
+            
         }
         body{
             background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -50,7 +51,7 @@
         #image{
             display: none;
             position: relative;
-            top: 0px;
+            top: -0px;
             left: 780px;
             height: 400px;
             width: 650px;
@@ -65,7 +66,8 @@
             font-size: 40px;
             padding: 5px; border: none; background-color: #7ee8fa;
             background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
-            border-radius: 3px
+            border-radius: 3px;
+            padding: 10px;
         }
         
         #btnID:hover{
@@ -93,11 +95,26 @@
             margin: 40px;
             font-family: 'Beau Rivage', cursive;
         }
+        #playPauseBTN{
+            padding: 10px 25px;
+            font-size: 22px;
+            line-height: 40px;
+            min-width: 150px;
+            text-align: center;
+            cursor: pointer;
+            background: linear-gradient(to right bottom,#273c75,#079992);
+            opacity: 0.9;
+            color: #fff;
+            border-radius: 5px;
+            border:0px;
+            height: 60px;
+        }
     </style>
 
 </head>    
 
 <body>
+   
         <header class="nav">
             <nav>
                 <h1>Kim Mi - soo <br><br> 1992 - 2022</h1>
@@ -112,8 +129,15 @@
             font-family: 'Ubuntu', sans-serif;
             padding: 5px;" class="para">Sometimes All I Think About Is  <button type="button"onclick="show()" id="btnID">
                 :(        
-            </button>
-            </p>
+            </button><br><br><br><br>
+            <audio id="audio" autoplay loop>
+                <source src="Audio/Destiny.mp3" type="audio/mp3">
+                <source src="Audio/Destiny.mp3" type="audio/mpeg">
+                Hello
+            </audio>
+            
+            <button id="playPauseBTN" onclick="playPause()">Pause⏸</button><br><br>
+            <h2>Advice :- If you watch it while listening to music in the background, you might feel better.</h2>
             <img id="image" src="IMGs/JeongMin.jpg"alt="Jeong Min"/>
             <br><br><br><br>
         </main>
@@ -141,6 +165,25 @@
         document.getElementById('bio').style.display = "block";
         document.getElementById('btnID').style.display = "none";
     }
+
+    var audio = document.getElementById('audio');
+var playPauseBTN = document.getElementById('playPauseBTN');
+var count = 0;
+
+function playPause(){
+	if(count===0){
+		count = 1;
+		audio.play();
+		playPauseBTN.innerHTML = "Pause ⏸";
+	}else{
+		count = 0;
+		audio.pause();
+		playPauseBTN.innerHTML = "Play ►";
+	};
+};
+
+
+
 </script>
 
 </html>
