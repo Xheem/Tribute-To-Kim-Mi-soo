@@ -158,17 +158,14 @@
 
 <script>
     function show() {
-
-        /* Access image by id and change
-        the display property to block*/
         document.getElementById('image').style.display = "block";
         document.getElementById('bio').style.display = "block";
         document.getElementById('btnID').style.display = "none";
-    }
+    };
 
-    var audio = document.getElementById('audio');
-var playPauseBTN = document.getElementById('playPauseBTN');
-var count = 0;
+let audio = document.getElementById('audio');
+let playPauseBTN = document.getElementById('playPauseBTN');
+let count = 0;
 
 function playPause(){
 	if(count===0){
