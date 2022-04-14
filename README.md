@@ -1,4 +1,4 @@
-#Tribute-to-Kim-Mee-soo
+#Tribute-to-Kim-Mi-soo
 
 Note :- The background music is from  JTBC's *Snowdrop* K-Drama named "Destiny".
 
