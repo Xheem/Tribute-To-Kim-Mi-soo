@@ -1,5 +1,4 @@
 <!-- Note: Background animation by This "https://codepen.io/P1N2O/pen/pyBNzX" guy in codepen -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,7 +128,9 @@
             font-family: 'Ubuntu', sans-serif;
             padding: 5px;" class="para">Sometimes All I Think About Is  <button type="button"onclick="show()" id="btnID">
                 :(        
-            </button><br><br><br><br>
+                </button>
+                <img id="image" src="IMGs/JeongMin.jpg"alt="Jeong Min"/>
+                <br><br><br><br>
             <audio id="audio" autoplay loop>
                 <source src="Audio/Destiny.mp3" type="audio/mp3">
                 <source src="Audio/Destiny.mp3" type="audio/mpeg">
@@ -137,8 +138,7 @@
             </audio>
             
             <button id="playPauseBTN" onclick="playPause()">Pause⏸</button><br><br>
-            <h2>Advice :- If you watch it while listening to music in the background, you might feel better.</h2>
-            <img id="image" src="IMGs/JeongMin.jpg"alt="Jeong Min"/>
+            <h2 style="font-family: 'Ubuntu', sans-serif;">Advice :- If you watch it while listening to music in the background,<br> you might feel better.</h2>
             <br><br><br><br>
         </main>
         <hr>
@@ -173,12 +173,12 @@ var count = 0;
 function playPause(){
 	if(count===0){
 		count = 1;
-		audio.play();
-		playPauseBTN.innerHTML = "Pause ⏸";
-	}else{
-		count = 0;
 		audio.pause();
 		playPauseBTN.innerHTML = "Play ►";
+	}else{
+		count = 0;
+		audio.play();
+		playPauseBTN.innerHTML = "Pause ⏸";
 	};
 };
 
