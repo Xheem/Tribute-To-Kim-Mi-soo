@@ -90,7 +90,7 @@
             margin: 40px;
             font-family: 'Beau Rivage', cursive;
         }
-        #playPauseBTN{
+        #play_Pause_Button{
             padding: 10px 25px;
             font-size: 22px;
             line-height: 40px;
@@ -105,10 +105,11 @@
             height: 60px;
             transition: all ease-in 1s;
         }
-        #playPauseBTN:hover{
+        #play_Pause_Button:hover{
             box-shadow: #33cb23;
             transform: rotate(10deg);
         }
+       
     </style>
 
 </head>    
@@ -132,12 +133,12 @@
                 </button>
                 <img id="image" src="IMGs/JeongMin.jpg"alt="Jeong Min"/>
                 <br><br><br><br>
-            <audio id="audio" autoplay loop>
-                <source src="Audio/Destiny.mp3" type="audio/mp3">
-                <source src="Audio/Destiny.mp3" type="audio/mpeg">
+            <audio id="audio" autoplay src="Audio/Destiny.mp3" loop>
+               
+                <!-- <source src="Audio/Destiny.mp3" type="audio/mpeg"> -->
             </audio>
             
-            <button id="playPauseBTN" onclick="playPause()">Pause The Music ⏸</button><br><br>
+            <button id="play_Pause_Button" onclick="play_Pause()">Pause The Music </button><br><br>
             <h2 style="font-family: 'Ubuntu', sans-serif;">Advice :- If you watch it while listening to music in the background,<br> you might feel better.</h2>
             <br><br><br><br>
         </main>
@@ -166,18 +167,18 @@
     }
 
     var audio = document.getElementById('audio');
-    var playPauseBTN = document.getElementById('playPauseBTN');
-    var count = 0;
+    var play_Pause_Button = document.getElementById('play_Pause_Button');
+    var number = 0;
 
-function playPause(){
-	if(count===0){
-		count = 1;
+function play_Pause(){
+	if(number===0){
+		number = 1;
 		audio.play();
-		playPauseBTN.innerHTML = "Pause The Music ⏸";
+		play_Pause_Button.innerHTML = "Pause The Music";
 	}else{
-		count = 0;
+		number = 0;
 		audio.pause();
-		playPauseBTN.innerHTML = "Play The Music ►";
+		play_Pause_Button.innerHTML = "Play The Music";
 	};
 };
 
