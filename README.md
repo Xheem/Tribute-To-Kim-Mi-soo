@@ -9,3 +9,8 @@ I have created this simple tribute page of my beloved/favourite actress who pass
 
 
 Click on the ":(" (sad) emoticon to see the changes.
+
+Music will probably not play When you play it for the first time,
+ 
+Try:
+  click on "Pause The Music" then "Play The Music". It will Play The Music
